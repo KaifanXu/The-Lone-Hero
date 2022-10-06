@@ -326,6 +326,12 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
 -r:"E:/unity/The-Lone-Hero/My project/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/NavMeshComponents.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/NavMeshComponentsEditor.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.AI.Navigation.Editor.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.AI.Navigation.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.AI.Navigation.Samples.Editor.ref.dll"
+-r:"Library/Bee/artifacts/500b0aE.dag/Unity.AI.Navigation.Samples.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
@@ -339,10 +345,14 @@
 -r:"Library/Bee/artifacts/500b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/500b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/BaseHealth.cs"
+"Assets/NavigationBaker.cs"
 "Assets/NavMeshSourceTag.cs"
+"Assets/Player_Collision.cs"
 "Assets/Scripts/EnemyPath.cs"
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Spawn.cs"
+"Assets/Tower.cs"
 -langversion:9.0
 
 /deterministic

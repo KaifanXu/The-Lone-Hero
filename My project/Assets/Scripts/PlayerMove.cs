@@ -1,12 +1,9 @@
-﻿
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed = 6f;
+    public float speed = 1f;
     public CharacterController contoller;
 
     public GameObject wall;
@@ -15,11 +12,10 @@ public class PlayerMove : MonoBehaviour
     public float setWallCoolDown = 1.0f, setTrapCoolDown = 1.0f, dashCoolDown = 5.0f;
     public float wallExistTime = 6.0f;
     public float trapExistTime = 10.0f;
-    private float wallTimer = 2.0f;
-    private float trapTimer = 6.0f;
+
     public GameObject wallHolder;
 
-    public navMeshSurface[] surfaces;
+    public NavMeshSurface[] surfaces;
     // Update is called once per frame
     void Update()
     {
@@ -39,26 +35,16 @@ public class PlayerMove : MonoBehaviour
 
     void NewSetWall()
     {
+    
+            
 
-        
-            wallTimer += Time.deltaTime;
-
-            if (Input.GetKeyDown(KeyCode.J) && numOfWall > 0)
+            if (Input.GetKeyDown(KeyCode.J))
             {
-                if (wallHolder.transform.childCount >= wallCapacity)
-                {
-                    Destroy(wallHolder.transform.GetChild(0).gameObject);
-                };
-
+               
                 GameObject go = Instantiate(wall, transform.position, Quaternion.identity);
+                Destroy(go, 5);
                 go.transform.parent = wallHolder.transform;
-                numOfWall--;
-
-                for (int i = 0; i < surfaces.Length; i++)
-                {
-                    surfaces[i].BuildNavMesh();
-                };
-
+                
         };
         
     }
